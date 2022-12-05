@@ -1,0 +1,23 @@
+{
+  "name": "coltonb-boop.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coltonb-boop/Coltonb-boop.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coltonb-boop/Coltonb-boop.github.io/issues"
+  },
+  "homepage": "https://github.com/Coltonb-boop/Coltonb-boop.github.io#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
