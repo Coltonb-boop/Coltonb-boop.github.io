@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/normalize.css">
   <link rel="stylesheet" href="src/index.css">
+  <script src="https://kit.fontawesome.com/717c8b6fd1.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
 </head>
 <body>
@@ -16,16 +17,28 @@
     <nav>
       <ul>
         <li>
-          <a href="">Home</a>
+          <a href="#landing">Home</a>
         </li>
-        <li>About Me</li>
-        <li>My Work</li>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#projects">My Work</a>
+        </li>
       </ul>
     </nav>
   </header>
   
+  <div class="landing__links">
+    <div class="landing__links--bar"></div>
+    <p><i class="fa-brands fa-github"></i></p>
+    <p><i class="fa-brands fa-linkedin"></i></p>
+    <p><i class="fa-solid fa-file"></i></p>
+    <div class="landing__links--bar"></div>
+  </div>
+
   <!-- Landing -->
-  <section class="landing__section">
+  <section id="landing" class="landing__section">
     <span class="landing__section--name">
       <h1>Colton Bitz</h1>
     </span>
@@ -35,12 +48,12 @@
   </section>
 
   <!-- About Me -->
-  <section class="about__section">
+  <section id="about" class="about__section">
     This is the about me section
   </section>
 
   <!-- Projects -->
-  <section class="projects__section">
+  <section id="projects" class="projects__section">
     This section is for projects
   </section>
   
