@@ -22,6 +22,8 @@
 
   --bs: 0.25em .25em .75em rgba(0,0,0,.25), 
   .125em 0.125em 0.25em rgba(0,0,0,.15);
+
+  --title-siding: -5rem;
 }
 
 @media (min-width: 800px) {
@@ -30,6 +32,7 @@
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
+    --title-siding: -12rem;
   }
 }
 html {
@@ -49,10 +52,13 @@ a, a:visited, a:hover, a:active {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
+  /* background-color: #a0a2a1; */
+  line-height: 0.6;
   width: 100vw;
   height: 5vh;
   color: #FFFFFF;
+  z-index: 1;
 }
 
 nav > ul {
@@ -75,11 +81,12 @@ nav li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* margin-top: 5vh; */
   padding-left: 2rem;
 }
 
 .landing__links--bar {
-  height: 35vh;
+  height: 33vh;
   width: 1px;
   border-left: 1px solid #FFFFFF;
 }
@@ -93,11 +100,25 @@ nav li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: -5rem;
+}
+
+.landing__section--name {
+  font-size: var(--fs-h1);
+  font-weight: 800;
+}
+
+.landing__section--title {
+  margin-left: var(--title-siding);
 }
 
 .about__section {
   background-color: #FFFFFF;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects__section {
